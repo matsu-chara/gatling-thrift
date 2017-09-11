@@ -8,7 +8,7 @@ trait ThriftDsl {
 
   implicit val thriftProtocol: ThriftProtocol
 
-  implicit val callback: Future[_]
+  implicit def callback: Future[_]
 
   def thrift: ThriftProtocolBuilder = ThriftProtocolBuilder()
 
